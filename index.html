@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksander Kołodziej">
+    <title>WCAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WCAG</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#postrz">Postrzegalność</a></li>
+            <li><a href="#funk">Funkcjonalność</a></li>
+            <li><a href="#zroz">Zrozumiałość</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="wstep">
+            <h2>WCAG - wstęp</h2>
+            <p>Na tej stronie dowiesz się jakie 3 zasady WCAG można stosować przy tworzeniu stron internetowych.</p>
+        </section>
+        <sectionc id="postrz">
+            <h2>Zasada 1 - Postrzegalność</h2>
+            <p>Treści strony powinny być możliwie do odebrania przez każdego użytkownika, nawet z ograniczeniami.</p>
+            <h3>Co można stosować:</h3>
+            <ol>
+                <li>Dodawanie atrybutu <strong>alt</strong> do obrazków</li>
+                <li>Odpowiedni kontrast tekstu do tła</li>
+                <li>Napisy do filmów</li>
+            </ol>
+            <p class="example">Przykład:</p>
+            <img src="#" alt="Obrazek białego kotka">
+        </section>
+        <section id="funk">
+            <h2>Zasada 2 - Funkcjonalność</h2>
+            <p>Strona powinna mieć możliwość obsługi nie tylko myszką, ale też klawiaturą.</p>
+            <h3>Co można stosować:</h3>
+            <ol>
+                <li>Obsługa strony klawiszem <strong>Tab</strong></li>
+                <li>Widoczna ramka wokół aktywnego elementu</li>
+                <li>Brak elementów wymagających tylko <strong>hover</strong></li>
+            </ol>
+            <p class="example">Przykład:</p>
+            <button id="focus">Kliknij mnie!</button>
+        </section>
+        <section id="zroz">
+            <h2>Zasada 3 - Zrozumiałość</h2>
+            <p>Treść oraz działanie strony powinny być proste i przewidywalne.</p>
+            <h3>Co można stosować:</h3>
+            <ol>
+                <li>Prosty język</li>
+                <li>Jasne komunikaty</li>
+                <li>Oznaczone pola formularza z pomocą <strong>label</strong></li>
+            </ol>
+            <p class="example">Przykład:</p>
+            <label for="email">Adres E-Mail:</label>
+            <input type="email" name="email" id="email">
+        </section>
+    </main>
+</body>
+</html>

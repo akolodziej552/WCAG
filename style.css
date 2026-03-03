@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    min-height: 100vh;
+}
+header {
+    height: 150px;
+    background-color: rgb(0, 83, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header h1 {
+    font-size: 4em;
+    letter-spacing: 1px;
+}
+nav {
+    background-color: rgb(21, 116, 241);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+nav a {
+    background-color: rgb(57, 143, 255);
+    border:rgb(0, 83, 192) 3px solid;
+    padding: 16px 36px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: hsl(0, 0%, 127%);
+    background-color: rgb(115, 176, 255); 
+}
+nav a:focus {
+    color: hsl(0, 0%, 127%);
+    background-color: rgb(115, 176, 255); 
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section {
+    padding: 20px 0;
+    border-bottom: 1px gray solid;
+}
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+main li {
+    margin: 10px 0;
+}
+#focus {
+    padding: 8px 16px;
+    font-weight: bold;
+}
+#focus:focus {
+    border-color:rgb(0, 83, 192);
+}
+main label {
+    font-weight: bold;
+}
+main input:focus {
+    border-color: rgb(115, 176, 255);
+}
+main .example {
+    margin: 30px 0 20px 0;
+    font-style: italic;
+}
