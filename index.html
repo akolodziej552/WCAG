@@ -16,15 +16,16 @@
             <li><a href="#postrz">Postrzegalność</a></li>
             <li><a href="#funk">Funkcjonalność</a></li>
             <li><a href="#zroz">Zrozumiałość</a></li>
+            <li><a href="#kontrast">Kontrast</a></li>
+            <li><a href="#resp">Responsywność</a></li>
         </ul>
     </nav>
     <main>
         <section id="wstep">
             <h2>WCAG - wstęp</h2>
-            <p>WCAG to międzynarodowy zbiór wytycznych i standardów tworzenia dostępnych stron internetowych.<br> Ich celem jest zapewnienie, że treści cyfrowe są przyjazne i dostępne dla wszystkich, w tym osób z niepełnosprawnościami.</p>    
-            <p>Na tej stronie dowiesz się jakie 3 zasady WCAG można stosować przy tworzeniu stron internetowych.</p>
+            <p>Na tej stronie dowiesz się jakie zasady WCAG można stosować przy tworzeniu stron internetowych.</p>
         </section>
-        <sectionc id="postrz">
+        <section id="postrz">
             <h2>Zasada 1 - Postrzegalność</h2>
             <p>Treści strony powinny być możliwie do odebrania przez każdego użytkownika, nawet z ograniczeniami.</p>
             <h3>Co można stosować:</h3>
@@ -61,8 +62,35 @@
             <label for="email">Adres E-Mail:</label>
             <input type="email" name="email" id="email">
         </section>
+        <section id="kontrast">
+            <h2>Zasada 4 - Kontrast kolorów</h2>
+            <p>Minimalny współczynnik kontastu tekstu do tła to 4,5:1 (poziom AA). Dla dużego tekstu (18px+) 3:1</p>
+            <p class="example">Przykład:</p>
+            <div class="good">
+                <p>Tak rób!!!</p>
+                <div><h3>Tekst</h3></div>
+            </div>
+            <div class="bad">
+                <p>Tak nie rób!!!</p>
+                <div><h3>Tekst</h3></div>
+            </div>
+        </section>
+        <section id="resp">
+            <h2>Zasada 5 - Responsywność</h2>
+            <p>Strona powinna poprawnie wyświetlać się na różnych urządzeniach — od telefonów po monitory.</p>
+            <h3>Co można stosować:</h3>
+            <ol>
+                <li>Reguły <strong>@media</strong> do zmiany układu w zależności od szerokości ekranu</li>
+                <li>Jednostki względne (<strong>%, em, rem, vw</strong>) zamiast stałych pikseli</li>
+                <li>Właściwość <strong>max-width: 100%</strong> dla obrazków i elementów blokowych</li>
+            </ol>
+            <p class="example">Przykład:</p>
+            <div class="resp-demo">
+                <div class="resp-box">Blok 1</div>
+                <div class="resp-box">Blok 2</div>
+                <div class="resp-box">Blok 3</div>
+            </div>
+        </section>
     </main>
 </body>
-
 </html>
-
