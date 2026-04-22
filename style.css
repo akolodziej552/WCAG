@@ -21,6 +21,8 @@ header {
 header h1 {
     font-size: 4em;
     letter-spacing: 1px;
+    opacity: 1;
+    animation: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 nav {
     background-color: rgb(21, 116, 241);
@@ -83,7 +85,7 @@ main li {
 }
 #focus:focus {
     border-color: rgb(0, 83, 192);
-    animation: button 0.5s ease-in-out;
+    animation: button 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 main label {
     font-weight: bold;
@@ -97,7 +99,7 @@ main input {
 }
 main input:focus {
     border-color: rgb(115, 176, 255);
-    animation: input 1s ease-out;
+    animation: input 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 main .example {
     margin: 30px 0 20px 0;
@@ -190,7 +192,15 @@ main .example {
 
 @keyframes input {
     50% {
-        padding: 10px;
-        font-size: 110%;
+        padding: 5px;
+        font-size: 105%;
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
